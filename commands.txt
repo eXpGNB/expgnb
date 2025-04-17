@@ -1,0 +1,6 @@
+# run usrp gNb
+sudo ./nr-softmodem -E --sa -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/modified.conf  --continuous --tx
+
+
+# set default route
+ip route add default via 10.0.0.2 dev oaitun_ue1
