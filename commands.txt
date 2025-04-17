@@ -4,3 +4,7 @@ sudo ./nr-softmodem -E --sa -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/mod
 
 # set default route
 ip route add default via 10.0.0.2 dev oaitun_ue1
+
+
+# run usrp UE
+sudo ./nr-uesoftmodem -E --numerology 1 -r 106 --band 78 -C 3619200000 --ssb 516 -O ~/ieee_ants2024_oai_tutorial/ran/conf/ue-usrp.conf
